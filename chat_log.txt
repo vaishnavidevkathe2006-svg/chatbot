@@ -1,0 +1,14 @@
+[2026-06-10 18:48] You: hello
+[2026-06-10 18:48] Bot: Hi! Ask me about roles, stipend, duration, or application process.
+
+[2026-06-10 18:48] You: roles
+[2026-06-10 18:48] Bot: Open roles: Python Developer, Web Dev, Data Analyst, UI/UX Designer.
+
+[2026-06-10 18:48] You: web dev
+[2026-06-10 18:48] Bot: Sorry, I didn't get that. Try asking about 'roles', 'stipend', or 'apply'.
+
+[2026-06-10 18:48] You: ok
+[2026-06-10 18:48] Bot: Sorry, I didn't get that. Try asking about 'roles', 'stipend', or 'apply'.
+
+[2026-06-10 18:50] You: hello
+[2026-06-10 18:50] Bot: Hi! Ask me about roles, stipend, duration, or application process.
