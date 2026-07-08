@@ -1,0 +1,54 @@
+### *Project Title*
+*Internship Query Chatbot – A Smart Assistant for Student Queries*
+
+### *1. Software Requirements*
+- *Programming Language*: Python 3.8 or above
+- *IDE*: Visual Studio Code with Python extension
+- *Libraries/Frameworks*: 
+    - Standard Library: `datetime`, `os`
+    - For Web Version: `Flask 2.0+`
+- *Database*: SQLite3 for storing and retrieving FAQ data
+- *Operating System*: Windows 10/11, macOS, or Linux
+- *Browser*: Google Chrome / Microsoft Edge for web interface testing
+
+### *2. Hardware Requirements*
+- *Processor*: Intel i3 or equivalent and above
+- *RAM*: Minimum 4 GB
+- *Storage*: 200 MB of free disk space
+- *Display*: 1024x768 resolution or higher
+- *Internet*: Not required for local execution; required only for deployment
+
+### *3. Functional Requirements*
+1. *User Interaction*: The system shall accept user queries through a command-line or web interface.
+2. *Intent Recognition*: The chatbot shall identify keywords such as `roles`, `stipend`, `duration`, `eligibility`, and `apply` to provide relevant responses.
+3. *Response Generation*: The system shall fetch and display appropriate answers from a predefined database or dictionary.
+4. *Fallback Mechanism*: If the query is not recognized, the chatbot shall return a default response guiding the user.
+5. *Session Termination*: The chatbot shall end the conversation when the user enters `quit` or `bye`.
+6. *Chat Logging*: All user-bot interactions shall be logged with timestamps in a text file for future reference.
+7. *Admin Capability*: Provision for administrators to update the FAQ database without modifying source code.
+
+### *4. Non-Functional Requirements*
+1. *Usability*: The interface shall be simple and intuitive for non-technical users.
+2. *Performance*: The system shall generate responses within 1 second of query submission.
+3. *Reliability*: The application shall handle invalid inputs gracefully without crashing.
+4. *Maintainability*: Code shall be modular to allow easy addition of new FAQs and features.
+5. *Portability*: The system shall run on any machine with Python installed, without platform-specific dependencies.
+6. *Security*: Basic input validation shall be implemented to prevent injection attacks if a database is used.
+
+### *5. Database Requirements*
+*Table Name*: `faqs`
+
+Field | Data Type | Constraint | Description
+`id` | INTEGER | PRIMARY KEY | Unique identifier
+`keyword` | TEXT | NOT NULL | Trigger word for query
+`response` | TEXT | NOT NULL | Answer returned by bot
+
+
+*Key Operations*: `SELECT`, `INSERT`, `UPDATE`, `DELETE` as per CRUD model discussed in your System Architecture slide.
+
+### *6. System Architecture Overview*
+1. *Presentation Layer*: CLI or Flask-based Web UI for user interaction
+2. *Application Layer*: Python script for processing logic and keyword matching
+3. *Data Layer*: SQLite database for storing FAQs and logs
+
+*Data Flow*: `User Input → Processing Module → Query Database → Generate Response → Display to User`
